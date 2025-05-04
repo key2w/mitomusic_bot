@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mitomusic
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    autoDeploy: true
+    envVars:
+      - key: TOKEN
+        value: your_token_will_be_set_in_render
